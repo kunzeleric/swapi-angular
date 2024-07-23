@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+
+  &__img {
+    margin-bottom: 2rem;
+    box-shadow: 15px 15px white;
+    max-width: 800px;
+    max-height: 600px;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+}
