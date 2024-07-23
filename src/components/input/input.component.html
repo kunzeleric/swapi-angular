@@ -1,0 +1,13 @@
+<mat-form-field class="input-component-wrapper">
+  <mat-label>Search Movie here..</mat-label>
+  <input
+    type="email"
+    matInput
+    [formControl]="emailFormControl"
+    [errorStateMatcher]="matcher"
+    placeholder="Star Wars IV: A New Hope"
+  />
+  @if (emailFormControl.hasError('required')) {
+  <mat-error>Movie name is <strong>required</strong></mat-error>
+  }
+</mat-form-field>
